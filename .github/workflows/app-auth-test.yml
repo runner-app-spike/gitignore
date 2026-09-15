@@ -4,4 +4,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Testing PR status check via GitHub App installation token"
+      - run: echo "This step will fail on purpose to test failed-status visibility" && exit 1
