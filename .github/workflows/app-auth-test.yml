@@ -1,0 +1,7 @@
+name: App Auth Test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing PR status check via GitHub App installation token"
