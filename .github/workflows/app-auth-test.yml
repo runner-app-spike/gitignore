@@ -1,0 +1,7 @@
+name: App Auth Test
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This step will fail on purpose to test failed-status visibility" && exit 1
